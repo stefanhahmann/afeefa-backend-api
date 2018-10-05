@@ -12,7 +12,9 @@ Nominatim.configure do |config|
   # "Wenn sie eine große Anzahl an Suchabfragen abschicken wollen, geben sie bitte ihre Mail-Adresse in der Abfrage an.
   # "Diese Info wird vertraulich behandelt und nur verwendet um mit ihnen bei Problemen in Kontakt treten zu können. Siehe auch unsere Usage-Policy."
   config.email = '@afeefa.de'
+  # most probably this endcode needs to be used
   config.endpoint = 'https://nominatim.openstreetmap.org/search'
-  config.endpoint = 'https://nominatim.openstreetmap.org'
+  # alternative endpoint, if the upper one does not work
+  # config.endpoint = 'https://nominatim.openstreetmap.org'
 end
 
