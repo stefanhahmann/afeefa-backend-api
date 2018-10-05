@@ -25,7 +25,7 @@ class Api::V1::GeocodingsController < ApplicationController
       render json: {
         latitude: place.lat,
         longitude: place.lon,
-        street: street,
+        street: place.address.road,
         city: place.address.city,
         full_address: place.address
       }
